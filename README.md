@@ -37,3 +37,32 @@ class LeeFichero {
       }
    }
 }
+
+
+
+
+
+package com.mycompany.login;
+
+import java.io.FileReader;
+import java.io.BufferedReader;
+public class leertxt {
+    public static void main (String arg[]){
+    String txt="";
+    try {
+    FileReader lectura = new FileReader ("txt.txt");
+    BufferedReader almacenado = new BufferedReader (lectura);
+    
+    while((txt = almacenado.readLine())!=null){
+    System.out.println(txt);
+    }
+   
+    }
+    catch (Exception e){
+    System.out.println("usuario o contraseña incorrecto");
+    }
+    }   
+    
+}
+
+
